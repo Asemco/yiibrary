@@ -72,7 +72,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        return $this->render('index');
+        return $this->renderContent(null);
     }
 
     /**
@@ -212,6 +212,6 @@ class SiteController extends Controller
     }
 
     public function actionNewContent() {
-        return $this->render('index', ['newContent' => date('H;i:s')]);
+        return $this->renderPartial('index', ['newContent' => date('H;i:s')]);
     }
 }

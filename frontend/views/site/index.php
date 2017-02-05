@@ -14,11 +14,9 @@ $this->title = 'My Yii Application';
 
         <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
     </div>
-
-    <?php Pjax::begin(); ?>
     <div class="body-content">
         <h1>New Content: <?php if(isset($newContent)){echo $newContent;} ?></h1>
-        <a href="site/new-content" class="btn btn-lg btn-success">Click me</a>
+        <a href="/site/new-content" class="btn btn-lg btn-success">Click me</a>
         <div class="row">
             <div class="col-lg-4">
                 <h2>Heading</h2>
@@ -28,7 +26,7 @@ $this->title = 'My Yii Application';
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+                <p><a class="btn btn-default" href="/site/about">About</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Heading</h2>
@@ -38,7 +36,7 @@ $this->title = 'My Yii Application';
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+                <p><a class="btn btn-default" href="/site/contact">Contact</a></p>
             </div>
             <div class="col-lg-4">
                 <h2>Heading</h2>
@@ -48,10 +46,9 @@ $this->title = 'My Yii Application';
                     ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur.</p>
 
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+                <p><a class="btn btn-default" href="/site/signup">Signup</a></p>
             </div>
         </div>
 
     </div>
-    <?php Pjax::end(); ?>
 </div>
